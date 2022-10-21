@@ -1,0 +1,1 @@
+### This repository contains all code snippets of various weeks containg codes
