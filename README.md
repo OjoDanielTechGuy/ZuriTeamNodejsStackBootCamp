@@ -1,1 +1,5 @@
 ### This repository contains all code snippets of various weeks containg codes
+
+- #### [Week 4 - Number Guessing Game (Link in Readme.md)](./Week%204/README.md)
+
+- #### [Week 5 - Rendering of Pages and HTTP Module](./Week%205/)
