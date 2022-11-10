@@ -3,6 +3,11 @@
 //send request
 GET http://localhost:3000/flight HTTP/1.1
 
+//get user by id
+###
+GET http://localhost:3000/flight/a426d4b6-b0ab-421d-b400-714ee7a0b49b HTTP/1.1
+
+//add user
 ###
 POST http://localhost:3000/flight HTTP/1.1
 Content-Type: application/json
@@ -13,3 +18,19 @@ Content-Type: application/json
     "price": 26000,
     "date": "26-06-2022"
 }
+
+//update
+###
+PUT http://localhost:3000/flight/a426d4b6-b0ab-421d-b400-714ee7a0b49b HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "flight to america",
+    "time": "2pm",
+    "price": 50000,
+    "date": "29-10-2022"
+}
+
+//delete flight
+###
+DELETE http://localhost:3000/flight/a426d4b6-b0ab-421d-b400-714ee7a0b49b HTTP/1.1
