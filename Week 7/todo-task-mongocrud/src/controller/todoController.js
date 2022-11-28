@@ -1,6 +1,22 @@
 const Todo = require("../model/Todo");
 
 //Add a Todo Task to a task
+exports.addTodo = async (request, response) => {
+
+    try
+
+    let todo = await request.body;
+    let created = await Todo.create(todo);
+    if (!created) return response.status(400).json({
+        success: false,
+        message: 'Adding Todo Task failed'
+    })
+    return response.status(200).json({
+        success: true,
+        message: 'Added todo task successfully'
+    })
+    
+}
 
 //Update a particular Todo task
 

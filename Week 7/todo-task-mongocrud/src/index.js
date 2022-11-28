@@ -12,7 +12,7 @@ app.use('/user', todoRoute)
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (request, response) => {
-  response.send("Todo task using MongoDbS");
+  response.send("Todo task using MongoDb");
 });
 
 app.listen(PORT, () => console.log(`Serving on ${PORT}`));
