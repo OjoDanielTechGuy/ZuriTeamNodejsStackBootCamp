@@ -1,0 +1,22 @@
+//retrieving all todo task
+GET http://localhost:3000/todo HTTP/1.1
+
+//adding a todo task
+POST http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    //id is automatically generated
+    "title": "Do assignment 1",
+    "description": "Assingment on Solidity"
+}
+
+//update task - //add the id to the end of todo/
+PUT http://localhost:3000/todo/ HTTP/1.1
+{   
+    "title": "Do assignment 3",
+    "description": "Assingment on Javascript"
+}
+
+//deleting task - add the id to the end of todo/
+DELETE http://localhost:3000/todo/ HTTP/1.1
